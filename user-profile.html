@@ -547,19 +547,6 @@
     <!--start page wrapper -->
     <div class="page-wrapper">
       <div class="page-content">
-        <!-- alert box -->
-        <div class="alert border-0 border-start border-5 border-white alert-dismissible fade show py-2">
-          <div class="d-flex align-items-center">
-            <div class="font-35 text-white">
-              <i class="bx bx-info-circle"></i>
-            </div>
-            <div class="ms-3">
-              <h6 class="mb-0 text-white">Warning</h6>
-              <div>You have 10 Pending Affiliate Requests</div>
-            </div>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
         <!--End Row-->
 
         <div class="col">
@@ -622,17 +609,6 @@
                   </a>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <a class="nav-link" data-bs-toggle="pill" href="#primary-pills-link-accounts" role="tab"
-                    aria-selected="false">
-                    <div class="d-flex align-items-center">
-                      <div class="tab-icon">
-                        <i class="bx bxs-user-account font-18 me-1"></i>
-                      </div>
-                      <div class="tab-title">Link Accounts</div>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item" role="presentation">
                   <a class="nav-link" data-bs-toggle="pill" href="#primary-pills-security" role="tab"
                     aria-selected="false">
                     <div class="d-flex align-items-center">
@@ -656,86 +632,82 @@
                 </li>
               </ul>
               <div class="tab-content col-lg-9" id="pills-tabContent">
-                <div class="card tab-pane fade show active" id="primary-pills-home">
-                  <div class="card-body">
-                    <div class="d-flex flex-wrap align-items-center gap-3 text-left w-100">
-                      <div class="mx-auto mx-md-0">
-                        <img src="assets/images/avatars/avatar-2.png" alt="Admin" class="rounded mb-2" width="110" />
-                      </div>
-                      <div class="d-inline-flex flex-column">
-                        <div class="d-inline-flex gap-3 flex-wrap flex-md-nowrap">
-                          <button class="btn btn-light w-100">Upload</button>
-                          <button class="btn btn-light w-100">Reset</button>
-                        </div>
-                        <p class="font-size-sm my-2">
-                          Allowed JPG, GIF or PNG. Max size of 800kB
-                        </p>
-                      </div>
+                <div class="tab-pane fade show active" id="primary-pills-home">
+                  <div class="d-flex flex-wrap align-items-center gap-3 text-left w-100">
+                    <div class="mx-auto mx-md-0">
+                      <img src="assets/images/avatars/avatar-2.png" alt="Admin" class="rounded mb-2" width="110" />
                     </div>
-                    <div class="py-3">
-                      <div class="row">
-                        <div class="col-12 mb-3 col-md-6 align-items-center form-group">
-                          <label class="mb-2">Username</label>
-                          <div>
-                            <input type="text" class="form-control w-100" value="John" />
-                          </div>
-                        </div>
-                        <div class="col-12 mb-3 col-md-6 align-items-center form-group">
-                          <label class="mb-2">Email</label>
-                          <div>
-                            <input type="text" class="form-control w-100" value="johndoe@gmail.com" />
-                          </div>
-                        </div>
+                    <div class="d-inline-flex flex-column">
+                      <div class="d-inline-flex gap-3 flex-wrap flex-md-nowrap">
+                        <button class="btn btn-light w-100">Upload</button>
+                        <button class="btn btn-light w-100">Reset</button>
                       </div>
-                      <div class="row">
-                        <div class="col-12 mb-3 col-md-6 align-items-center form-group">
-                          <label class="mb-2">First Name</label>
-                          <div>
-                            <input type="text" class="form-control w-100" value="John" />
-                          </div>
-                        </div>
-                        <div class="col-12 mb-3 col-md-6 align-items-center form-group">
-                          <label class="mb-2">Last Name</label>
-                          <div>
-                            <input type="text" class="form-control w-100" value="Doe" />
-                          </div>
-                        </div>
-                      </div>
-                      <button class="btn btn-light mt-5">Save Changes</button>
+                      <p class="font-size-sm my-2">
+                        Allowed JPG, GIF or PNG. Max size of 800kB
+                      </p>
                     </div>
                   </div>
-                </div>
-                <div class="card tab-pane fade" id="primary-pills-password" role="tabpanel">
-                  <div class="card-body">
-                    <div>
-                      <div class="row">
-                        <div class="row mb-3 col-lg-6 align-items-center form-group">
-                          <label class="mb-2">Old Password</label>
-                          <div>
-                            <input type="password" class="form-control" value="" />
-                          </div>
+                  <div class="py-3">
+                    <div class="row">
+                      <div class="col-12 mb-3 col-md-6 align-items-center form-group">
+                        <label class="mb-2">Username</label>
+                        <div>
+                          <input type="text" class="form-control w-100" value="John" />
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="row mb-3 col-lg-6 align-items-center form-group">
-                          <label class="mb-2">New Password</label>
-                          <div>
-                            <input type="password" class="form-control" value="" />
-                          </div>
-                        </div>
-                        <div class="row mb-3 col-lg-6 align-items-center form-group">
-                          <label class="mb-2">Re-type New Password</label>
-                          <div>
-                            <input type="password" class="form-control" value="" />
-                          </div>
+                      <div class="col-12 mb-3 col-md-6 align-items-center form-group">
+                        <label class="mb-2">Email</label>
+                        <div>
+                          <input type="text" class="form-control w-100" value="johndoe@gmail.com" />
                         </div>
                       </div>
-                      <button class="btn btn-light mt-5">Save Changes</button>
                     </div>
+                    <div class="row">
+                      <div class="col-12 mb-3 col-md-6 align-items-center form-group">
+                        <label class="mb-2">First Name</label>
+                        <div>
+                          <input type="text" class="form-control w-100" value="John" />
+                        </div>
+                      </div>
+                      <div class="col-12 mb-3 col-md-6 align-items-center form-group">
+                        <label class="mb-2">Last Name</label>
+                        <div>
+                          <input type="text" class="form-control w-100" value="Doe" />
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn-light mt-5">Save Changes</button>
                   </div>
                 </div>
-                <div class="card tab-pane fade" id="primary-pills-sub-users" role="tabpanel">
-                  <div class="row card-body d-flex flex-column">
+                <div class="tab-pane fade" id="primary-pills-password" role="tabpanel">
+                  <div>
+                    <div class="row">
+                      <div class="row mb-3 col-lg-6 align-items-center form-group">
+                        <label class="mb-2">Old Password</label>
+                        <div>
+                          <input type="password" class="form-control" value="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 mb-3 col-md-6 align-items-center form-group">
+                        <label class="mb-2">New Password</label>
+                        <div>
+                          <input type="password" class="form-control" value="" />
+                        </div>
+                      </div>
+                      <div class="col-12 mb-3 col-md-6 align-items-center form-group">
+                        <label class="mb-2">Re-type New Password</label>
+                        <div>
+                          <input type="password" class="form-control" value="" />
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn-light mt-5">Save Changes</button>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="primary-pills-sub-users" role="tabpanel">
+                  <div class="row d-flex flex-column">
                     <div class="col-lg-3">
                       <button class="btn btn-light mt-2">
                         Create Sub Users
@@ -743,6 +715,53 @@
                       <button class="btn btn-light mt-4">
                         Manage Sub Users
                       </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="primary-pills-link-multiple-accounts" role="tabpanel">
+                  <div class="row d-flex flex-column">
+                    <div class="col-12">
+                      <p>
+                        You can link your clickbetter accounts and then access
+                        those from single login
+                      </p>
+                      <div class="col-12 col-md-6 mb-3 align-items-center form-group">
+                        <label class="mb-2">Enter Clickbetter Username</label>
+                        <div>
+                          <input type="text" class="form-control w-100" value="John" />
+                        </div>
+                      </div>
+                      <button class="btn btn-light mt-2">Add Account</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="primary-pills-security" role="tabpanel">
+                  <div class="d-flex mt-3 justify-content-between form-check form-switch">
+                    <label class="form-check-label" for="flexSwitchCheckChecked">Enable Geo Login Security</label>
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="primary-pills-notifications" role="tabpanel">
+                  <div class="row d-flex flex-column">
+                    <div class="col-12">
+                      <p>
+                        Set Sales & Support Notification E-mails(Optional)
+                      </p>
+                      <div class="row">
+                        <div class="col-12 mb-3 col-md-6 align-items-center form-group">
+                          <label class="mb-2">Sales and Rebill Notification E-mail</label>
+                          <div>
+                            <input type="text" class="form-control" value="" />
+                          </div>
+                        </div>
+                        <div class="col-12 mb-3 col-md-6 align-items-center form-group">
+                          <label class="mb-2">Support Notification Email</label>
+                          <div>
+                            <input type="text" class="form-control" value="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn btn-light mt-2">Update Notification E-mails</button>
                     </div>
                   </div>
                 </div>
@@ -760,7 +779,7 @@
       <!--Start Back To Top Button-->
       <a href="javaScript:;" class="back-to-top"><i class="bx bxs-up-arrow-alt"></i></a>
       <!--End Back To Top Button-->
-      <footer class="page-footer">
+      <footer class="bg-dark shadow-sm p-2 text-center fixed-bottom">
         <p class="mb-0">Copyright © 2021. All right reserved.</p>
       </footer>
     </div>

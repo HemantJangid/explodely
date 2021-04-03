@@ -498,7 +498,7 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="javascript:;"
+                  <a class="dropdown-item" href="/user-profile.html"
                     ><i class="bx bx-user"></i><span>Account</span></a
                   >
                 </li>
@@ -663,539 +663,360 @@
       <!--end navigation-->
 
       <!--start page wrapper -->
-      <div class="page-wrapper">
+      <div class="page-wrapper mb-5">
         <div class="page-content">
-          <!--End Row-->
-
-          <div class="col">
-            <div class="card">
-              <div class="card-body row mx-1">
-                <ul
-                  class="nav nav-pills mb-3 flex-column col-lg-3"
-                  role="tablist"
+          <div class="mb-4">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link active"
+                  data-bs-toggle="tab"
+                  href="#revshare-paychecks"
+                  role="tab"
+                  aria-selected="true"
                 >
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link active"
-                      data-bs-toggle="pill"
-                      href="#primary-pills-home"
-                      role="tab"
-                      aria-selected="true"
-                    >
-                      <div class="d-flex align-items-center">
-                        <div class="tab-icon">
-                          <i class="bx bx-user font-18 me-1"></i>
-                        </div>
-                        <div class="tab-title">General Section</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link"
-                      data-bs-toggle="pill"
-                      href="#primary-pills-payments"
-                      role="tab"
-                      aria-selected="false"
-                    >
-                      <div class="d-flex align-items-center">
-                        <div class="tab-icon">
-                          <i class="bx bx-dollar-circle font-18 me-1"></i>
-                        </div>
-                        <div class="tab-title">Payment Info</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link"
-                      data-bs-toggle="pill"
-                      href="#primary-pills-password"
-                      role="tab"
-                      aria-selected="false"
-                    >
-                      <div class="d-flex align-items-center">
-                        <div class="tab-icon">
-                          <i class="bx bx-cog font-18 me-1"></i>
-                        </div>
-                        <div class="tab-title">Change Password</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link"
-                      data-bs-toggle="pill"
-                      href="#primary-pills-sub-users"
-                      role="tab"
-                      aria-selected="false"
-                    >
-                      <div class="d-flex align-items-center">
-                        <div class="tab-icon">
-                          <i class="bx bx-user-pin font-18 me-1"></i>
-                        </div>
-                        <div class="tab-title">Sub Users</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link"
-                      data-bs-toggle="pill"
-                      href="#primary-pills-link-multiple-accounts"
-                      role="tab"
-                      aria-selected="false"
-                    >
-                      <div class="d-flex align-items-center">
-                        <div class="tab-icon">
-                          <i class="bx bxs-user-account font-18 me-1"></i>
-                        </div>
-                        <div class="tab-title">Link Multiple Accounts</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link"
-                      data-bs-toggle="pill"
-                      href="#primary-pills-security"
-                      role="tab"
-                      aria-selected="false"
-                    >
-                      <div class="d-flex align-items-center">
-                        <div class="tab-icon">
-                          <i class="bx bx-check-shield font-18 me-1"></i>
-                        </div>
-                        <div class="tab-title">Security</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link"
-                      data-bs-toggle="pill"
-                      href="#primary-pills-notifications"
-                      role="tab"
-                      aria-selected="false"
-                    >
-                      <div class="d-flex align-items-center">
-                        <div class="tab-icon">
-                          <i class="bx bx-bell font-18 me-1"></i>
-                        </div>
-                        <div class="tab-title">Notifications</div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <div class="tab-content col-lg-9" id="pills-tabContent">
-                  <div
-                    class="tab-pane fade show active"
-                    id="primary-pills-home"
-                  >
-                    <div
-                      class="d-flex flex-wrap align-items-center gap-3 text-left w-100"
-                    >
-                      <div class="mx-auto mx-md-0">
-                        <img
-                          src="assets/images/avatars/avatar-2.png"
-                          alt="Admin"
-                          class="rounded mb-2"
-                          width="110"
-                        />
-                      </div>
-                      <div class="d-inline-flex flex-column">
-                        <div
-                          class="d-inline-flex gap-3 flex-wrap flex-md-nowrap"
-                        >
-                          <button class="btn btn-light w-100">Upload</button>
-                          <button class="btn btn-light w-100">Reset</button>
-                        </div>
-                        <p class="font-size-sm my-2">
-                          Allowed JPG, GIF or PNG. Max size of 800kB
-                        </p>
-                      </div>
+                  <div class="d-flex align-items-center">
+                    <div class="tab-icon">
+                      <i class="bx bx-home font-18 me-1"></i>
                     </div>
-                    <div class="py-3">
-                      <div class="row">
-                        <div
-                          class="col-12 mb-3 col-md-6 align-items-center form-group"
-                        >
-                          <label class="mb-2">Username</label>
-                          <div>
-                            <input
-                              type="text"
-                              class="form-control w-100"
-                              value="John"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="col-12 mb-3 col-md-6 align-items-center form-group"
-                        >
-                          <label class="mb-2">Email</label>
-                          <div>
-                            <input
-                              type="text"
-                              class="form-control w-100"
-                              value="johndoe@gmail.com"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div
-                          class="col-12 mb-3 col-md-6 align-items-center form-group"
-                        >
-                          <label class="mb-2">First Name</label>
-                          <div>
-                            <input
-                              type="text"
-                              class="form-control w-100"
-                              value="John"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="col-12 mb-3 col-md-6 align-items-center form-group"
-                        >
-                          <label class="mb-2">Last Name</label>
-                          <div>
-                            <input
-                              type="text"
-                              class="form-control w-100"
-                              value="Doe"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <button class="btn btn-light mt-2">Save Changes</button>
-                    </div>
+                    <div class="tab-title">RevShare Paycheks</div>
                   </div>
-                  <div
-                    class="tab-pane fade"
-                    id="primary-pills-password"
-                    role="tabpanel"
-                  >
-                    <div>
-                      <div class="row">
-                        <div
-                          class="row mb-3 col-lg-6 align-items-center form-group"
-                        >
-                          <label class="mb-2">Old Password</label>
-                          <div>
-                            <input
-                              type="password"
-                              class="form-control"
-                              value=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div
-                          class="col-12 mb-3 col-md-6 align-items-center form-group"
-                        >
-                          <label class="mb-2">New Password</label>
-                          <div>
-                            <input
-                              type="password"
-                              class="form-control"
-                              value=""
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="col-12 mb-3 col-md-6 align-items-center form-group"
-                        >
-                          <label class="mb-2">Re-type New Password</label>
-                          <div>
-                            <input
-                              type="password"
-                              class="form-control"
-                              value=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <button class="btn btn-light mt-5">Save Changes</button>
+                </a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  href="#cpa-paychecks"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  <div class="d-flex align-items-center">
+                    <div class="tab-icon">
+                      <i class="bx bx-user-pin font-18 me-1"></i>
                     </div>
+                    <div class="tab-title">CPA Paychecks</div>
                   </div>
-                  <div
-                    class="tab-pane fade"
-                    id="primary-pills-sub-users"
-                    role="tabpanel"
-                  >
-                    <div class="row d-flex flex-column">
-                      <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <a
-                            class="nav-link active"
-                            data-bs-toggle="tab"
-                            href="#sub-users-create"
-                            role="tab"
-                            aria-selected="true"
-                          >
-                            <div class="d-flex align-items-center">
-                              <div class="tab-icon">
-                                <i class="bx bx-home font-18 me-1"></i>
-                              </div>
-                              <div class="tab-title">Create Sub Users</div>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <a
-                            class="nav-link"
-                            data-bs-toggle="tab"
-                            href="#sub-users-list"
-                            role="tab"
-                            aria-selected="false"
-                          >
-                            <div class="d-flex align-items-center">
-                              <div class="tab-icon">
-                                <i class="bx bx-user-pin font-18 me-1"></i>
-                              </div>
-                              <div class="tab-title">Manage Users</div>
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
-                      <div class="tab-content py-3">
-                        <div
-                          class="tab-pane fade show active"
-                          id="sub-users-create"
-                          role="tabpanel"
-                        >
-                          <div>
-                            <h4>
-                              Add Support Sub User To Your ClickBetter Account
-                            </h4>
-                            <p>
-                              Here you can create support sub user accounts &
-                              they can log in at
-                              https://clickbetter.net/subuserlogin.php to get
-                              access to only support/refund requests listing
-                              page and manual IPN resend page. Click here to
-                              Manage Subusers.
-                            </p>
-                          </div>
-
-                          <div class="row">
-                            <div
-                              class="col-12 mb-3 col-md-6 align-items-center form-group"
-                            >
-                              <label class="mb-2">Enter Sub Username:</label>
-                              <div>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  value=""
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="col-12 mb-3 col-md-6 align-items-center form-group"
-                            >
-                              <label class="mb-2"
-                                >Enter Sub User Password:</label
-                              >
-                              <div>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  value=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <button class="btn btn-light mt-2">
-                            Add Account
-                          </button>
-                        </div>
-                        <div class="table-responsive mt-3">
-                          <table class="table align-middle mb-0">
-                            <thead class="table-light">
-                              <tr>
-                                <th>No.</th>
-                                <th>Sub Username</th>
-                                <th>Sub Password</th>
-                                <th>Last Login</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td class="py-3">1</td>
-                                <td class="py-3">
-                                  <h6 class="mb-1 font-14">John Doe</h6>
-                                </td>
-                                <td class="py-3">
-                                  <p>password</p>
-                                </td>
-                                <td>23/02/2018 18:20</td>
-                              </tr>
-                              <tr>
-                                <td class="py-3">1</td>
-                                <td class="py-3">
-                                  <h6 class="mb-1 font-14">John Doe</h6>
-                                </td>
-                                <td class="py-3">
-                                  <p>password</p>
-                                </td>
-                                <td>23/02/2018 18:20</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
+                </a>
+              </li>
+              <li class="nav-item align-right" role="presentation">
+                <select class="form-select" aria-label="Default select example">
+                  <option value="1">April 2021</option>
+                  <option value="2">May 2021</option>
+                  <option value="3">June 2021</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="revshare-paychecks">
+              <div class="row row-cols-1 row-cols-lg-4">
+                <div class="col">
+                  <div class="card radius-10 py-2">
+                    <div class="card-body">
                       <div
-                        class="tab-pane fade"
-                        id="sub-users-list"
-                        role="tabpanel"
+                        class="d-flex flex-column align-items-center justify-content-center"
                       >
-                        <div class="table-responsive mt-3">
-                          <table class="table align-middle mb-0">
-                            <thead class="table-light">
-                              <tr>
-                                <th>No.</th>
-                                <th>Sub Username</th>
-                                <th>Sub Password</th>
-                                <th>Delete Subuser</th>
-                                <th>Action</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td class="py-3">1</td>
-                                <td class="py-3">
-                                  <h6 class="mb-1 font-14">John Doe</h6>
-                                </td>
-                                <td class="py-3">
-                                  <p>password</p>
-                                </td>
-                                <td>
-                                  <button class="btn btn-light mt-2">
-                                    Delete
-                                  </button>
-                                </td>
-                                <td>
-                                  <button class="btn btn-light mt-2">
-                                    Manage
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="py-3">2</td>
-                                <td class="py-3">
-                                  <h6 class="mb-1 font-14">John Doe</h6>
-                                </td>
-                                <td class="py-3">
-                                  <p>password</p>
-                                </td>
-                                <td>
-                                  <button class="btn btn-light mt-2">
-                                    Delete
-                                  </button>
-                                </td>
-                                <td>
-                                  <button class="btn btn-light mt-2">
-                                    Manage
-                                  </button>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
+                        <h5 class="mb-2">$9526</h5>
+                        <p class="mb-0">Total Account Balance</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="primary-pills-link-multiple-accounts"
-                  role="tabpanel"
-                >
-                  <div class="row d-flex flex-column">
-                    <div class="col-12">
-                      <p>
-                        You can link your clickbetter accounts and then access
-                        those from single login
-                      </p>
+                <div class="col">
+                  <div class="card radius-10 py-2">
+                    <div class="card-body">
                       <div
-                        class="col-12 col-md-6 mb-3 align-items-center form-group"
+                        class="d-flex flex-column align-items-center justify-content-center"
                       >
-                        <label class="mb-2">Enter Clickbetter Username</label>
-                        <div>
-                          <input
-                            type="text"
-                            class="form-control w-100"
-                            value="John"
-                          />
-                        </div>
+                        <h5 class="mb-2">$1520</h5>
+                        <p class="mb-0">Total Account Reserve</p>
                       </div>
-                      <button class="btn btn-light mt-2">Add Account</button>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="primary-pills-security"
-                  role="tabpanel"
-                >
-                  <div
-                    class="d-flex mt-3 justify-content-between form-check form-switch"
-                  >
-                    <label class="form-check-label" for="flexSwitchCheckChecked"
-                      >Enable Geo Login Security</label
-                    >
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="flexSwitchCheckChecked"
-                      checked
-                    />
+                <div class="col">
+                  <div class="card radius-10 py-2">
+                    <div class="card-body">
+                      <div
+                        class="d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <h5 class="mb-2">$4526</h5>
+                        <p class="mb-0">Total Account Refund</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="primary-pills-notifications"
-                  role="tabpanel"
-                >
-                  <div class="row d-flex flex-column">
-                    <div class="col-12">
-                      <p>Set Sales & Support Notification E-mails(Optional)</p>
-                      <div class="row">
-                        <div
-                          class="col-12 mb-3 col-md-6 align-items-center form-group"
-                        >
-                          <label class="mb-2"
-                            >Sales and Rebill Notification E-mail</label
-                          >
-                          <div>
-                            <input type="text" class="form-control" value="" />
-                          </div>
-                        </div>
-                        <div
-                          class="col-12 mb-3 col-md-6 align-items-center form-group"
-                        >
-                          <label class="mb-2">Support Notification Email</label>
-                          <div>
-                            <input type="text" class="form-control" value="" />
-                          </div>
-                        </div>
+                <div class="col">
+                  <div class="card radius-10 py-2">
+                    <div class="card-body">
+                      <div
+                        class="d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <h5 class="mb-2">456</h5>
+                        <p class="mb-0">Total CB Rate%</p>
                       </div>
-                      <button class="btn btn-light mt-2">
-                        Update Notification E-mails
-                      </button>
                     </div>
                   </div>
                 </div>
               </div>
+              <table class="table align-middle mb-0">
+                <thead class="table-light">
+                  <tr>
+                    <th>Week Ending</th>
+                    <th>Credit</th>
+                    <th>Debit</th>
+                    <th>Bal. Fwd.</th>
+                    <th>Reserve</th>
+                    <th>Release</th>
+                    <th>Weekly Bal.</th>
+                    <th>Pay Status</th>
+                    <th>Pay Date</th>
+                    <th>A/c Balance</th>
+                    <th>Threshold</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>22-05-13</td>
+                    <td>$260</td>
+                    <td>$0</td>
+                    <td>$216</td>
+                    <td>$52</td>
+                    <td>$0</td>
+                    <td>$424</td>
+                    <td>
+                      <button type="button" class="btn btn-success">
+                        Success
+                      </button>
+                    </td>
+                    <td>-</td>
+                    <td>$424</td>
+                    <td>$5250</td>
+                  </tr>
+                  <tr>
+                    <td>22-05-13</td>
+                    <td>$260</td>
+                    <td>$0</td>
+                    <td>$216</td>
+                    <td>$52</td>
+                    <td>$0</td>
+                    <td>$424</td>
+                    <td>
+                      <button type="button" class="btn btn-danger">
+                        Declined
+                      </button>
+                    </td>
+                    <td>-</td>
+                    <td>$424</td>
+                    <td>$5250</td>
+                  </tr>
+                  <tr>
+                    <td>22-05-13</td>
+                    <td>$260</td>
+                    <td>$0</td>
+                    <td>$216</td>
+                    <td>$52</td>
+                    <td>$0</td>
+                    <td>$424</td>
+                    <td>
+                      <button type="button" class="btn btn-success">
+                        Success
+                      </button>
+                    </td>
+                    <td>-</td>
+                    <td>$424</td>
+                    <td>$5250</td>
+                  </tr>
+                  <tr>
+                    <td>22-05-13</td>
+                    <td>$260</td>
+                    <td>$0</td>
+                    <td>$216</td>
+                    <td>$52</td>
+                    <td>$0</td>
+                    <td>$424</td>
+                    <td>
+                      <button type="button" class="btn btn-warning">
+                        Pending
+                      </button>
+                    </td>
+                    <td>-</td>
+                    <td>$424</td>
+                    <td>$5250</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div
+                class="d-flex flex-row align-items-center justify-content-between"
+              >
+                <div class="d-inline-flex flex-row align-items-center">
+                  <p>Show</p>
+                  <li class="nav-item align-right" role="presentation">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option value="1">April 2021</option>
+                      <option value="2">May 2021</option>
+                      <option value="3">June 2021</option>
+                    </select>
+                  </li>
+                  <p>Enrtries</p>
+                </div>
+                <nav aria-label="Page navigation example" class="mt-3 mb-5">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div></div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="cpa-paychecks">
+              <div>
+                <h4 class="my-3">Estimated Paychecks</h4>
+                <table class="table align-middle mb-0">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Payment Week</th>
+                      <th>CPA</th>
+                      <th>Amount</th>
+                      <th>Voids</th>
+                      <th>Net Amount</th>
+                      <th>Payment Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Week 5</td>
+                      <td>15</td>
+                      <td>$5462</td>
+                      <td>$216</td>
+                      <td>$52</td>
+                      <td>11-May-2021s</td>
+                    </tr>
+                    <tr>
+                      <td>Week 5</td>
+                      <td>15</td>
+                      <td>$5462</td>
+                      <td>$216</td>
+                      <td>$52</td>
+                      <td>11-May-2021s</td>
+                    </tr>
+                    <tr>
+                      <td>Week 5</td>
+                      <td>15</td>
+                      <td>$5462</td>
+                      <td>$216</td>
+                      <td>$52</td>
+                      <td>11-May-2021s</td>
+                    </tr>
+                    <tr>
+                      <td>Week 5</td>
+                      <td>15</td>
+                      <td>$5462</td>
+                      <td>$216</td>
+                      <td>$52</td>
+                      <td>11-May-2021s</td>
+                    </tr>
+                    <tr>
+                      <td>Week 5</td>
+                      <td>15</td>
+                      <td>$5462</td>
+                      <td>$216</td>
+                      <td>$52</td>
+                      <td>11-May-2021s</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div>
+                <h4 class="mt-5 mb-3">Estimated Paychecks</h4>
+                <table class="table align-middle mb-0">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Paycheck Date</th>
+                      <th>Credit</th>
+                      <th>Bal. Fwd.</th>
+                      <th>Threshold</th>
+                      <th>Weekly Bal.</th>
+                      <th>Status</th>
+                      <th>Pay Date</th>
+                      <th>Acc. Balance</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>22-05-13</td>
+                      <td>$260</td>
+                      <td>$0</td>
+                      <td>$216</td>
+                      <td>$424</td>
+                      <td>
+                        <button type="button" class="btn btn-success">
+                          Success
+                        </button>
+                      </td>
+                      <td>$424</td>
+                      <td>$5250</td>
+                    </tr>
+                    <tr>
+                      <td>22-05-13</td>
+                      <td>$260</td>
+                      <td>$0</td>
+                      <td>$216</td>
+                      <td>$424</td>
+                      <td>
+                        <button type="button" class="btn btn-success">
+                          Success
+                        </button>
+                      </td>
+                      <td>$424</td>
+                      <td>$5250</td>
+                    </tr>
+                    <tr>
+                      <td>22-05-13</td>
+                      <td>$260</td>
+                      <td>$0</td>
+                      <td>$216</td>
+                      <td>$424</td>
+                      <td>
+                        <button type="button" class="btn btn-success">
+                          Success
+                        </button>
+                      </td>
+                      <td>$424</td>
+                      <td>$5250</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
-        </div>
-        <!--End Row-->
-      </div>
 
+          <!--End Row-->
+
+          <!--End Row-->
+        </div>
+      </div>
       <!--end page wrapper -->
       <!--start overlay-->
       <div class="overlay toggle-icon"></div>

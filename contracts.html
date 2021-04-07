@@ -12,7 +12,6 @@
     <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
     <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
     <link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
-    <link href="assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
     <!-- loader-->
     <link href="assets/css/pace.min.css" rel="stylesheet" />
     <script src="assets/js/pace.min.js"></script>
@@ -448,8 +447,8 @@
                     <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon" />
                 </div>
                 <!-- <div>
-              <h4 class="logo-text">Dashtreme</h4>
-            </div> -->
+                  <h4 class="logo-text">Dashtreme</h4>
+                </div> -->
                 <div class="toggle-icon ms-auto">
                     <i class="bx bx-arrow-to-left"></i>
                 </div>
@@ -562,137 +561,290 @@
 
         <!--start page wrapper -->
         <div class="page-wrapper mb-5">
-            <div class="page-content">
-                <div class="mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="card-title d-flex align-items-center">
-                                <div>
-                                    <i class="bx bx-search-alt me-1 font-22 text-white"></i>
+            <div class="page-content px-4">
+                <div class="d-flex flex-row align-items-center justify-content-end mb-4">
+                    <div class="d-flex align-items-center mx-2">
+                        <div class="col">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                data-bs-target="#jv-contracts">
+                                Add JV Contracts
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="jv-contracts" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-xl modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">JV Contracts</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Here you can create JV contracts. This means that you
+                                                can give someone with a ClickBetter account a
+                                                percentage of your account products sales.
+                                            </p>
+                                            <div class="py-3">
+                                                <div class="col-12 mb-3 align-items-center form-group">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <label class="mb-2">Enter Partner Username (must be an existing
+                                                            ClickBetter account username)</label>
+                                                        <div class="query-icon">
+                                                            <i class="bx bx-question-mark" data-bs-toggle="tooltip"
+                                                                data-bs-placement="bottom"
+                                                                title="Must be existing clickbetter user"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <input type="text" class="form-control w-100" value="John" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 my-4 align-items-center form-group">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <label class="mb-2">Enter The % Of Sale You Agree To Pay
+                                                            (Important: Your Partner Will Receive These
+                                                            Details Via Email)</label>
+                                                        <div class="query-icon">
+                                                            <i class="bx bx-question-mark" data-bs-toggle="tooltip"
+                                                                data-bs-placement="bottom"
+                                                                title="Your Partner will recive these details via email"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <input type="text" class="form-control w-100" value="10%" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Close
+                                            </button>
+                                            <button type="button" class="btn btn-primary">
+                                                Create JV Contract
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <h5 class="mb-0 text-white">Search Transactions</h5>
                             </div>
-                            <hr />
-                            <form class="row g-3">
-                                <div class="col-lg-3 col-md-6 col-12">
-                                    <input type="text" class="form-control" placeholder="First Name" />
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-12">
-                                    <input type="text" class="form-control" placeholder="Last Name" />
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-12">
-                                    <input type="text" class="form-control" placeholder="Client Email" />
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-12">
-                                    <select id="inputState" class="form-select" placeholder="Choose">
-                                        <option selected>Payment Type</option>
-                                        <option>All</option>
-                                        <option>Credit Cards</option>
-                                        <option>BitCoins</option>
-                                        <option>Bank Wires</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-12">
-                                    <button type="submit" class="btn btn-light w-100 px-5">
-                                        Sale
-                                    </button>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-12">
-                                    <button type="submit" class="btn btn-light w-100 px-5">
-                                        Refund
-                                    </button>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-12">
-                                    <button type="submit" class="btn btn-light w-100 px-5">
-                                        Changeback
-                                    </button>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-12">
-                                    <button type="submit" class="btn btn-light w-100 px-5">
-                                        Show Test
-                                    </button>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-12">
-                                    <input type="date" class="form-control" />
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-12">
-                                    <input type="date" class="form-control" />
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-12">
-                                    <input type="text" class="form-control" placeholder="Order ID" />
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-12">
-                                    <input type="text" class="form-control" placeholder="Tracking ID" />
-                                </div>
-                                <div class="col-md-6">
-                                    <button type="submit" class="btn btn-light px-5 w-100">
-                                        <i class="bx bx-show-alt mr-1"></i>Search & View
-                                        Transactions
-                                    </button>
-                                </div>
-                                <div class="col-md-6">
-                                    <button type="submit" class="btn btn-light px-5 w-100">
-                                        <i class="bx bxs-download"></i>Search & Download
-                                        Transactions
-                                    </button>
-                                </div>
-                            </form>
                         </div>
                     </div>
+                    <div class="d-flex align-items-center mx-2">
+                        <div class="col">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                data-bs-target="#secondtiercontracts">
+                                Add 2nd Tier Contracts
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="secondtiercontracts" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-xl modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">
+                                                Second Tier Affiliate Contracts
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Here you can create 2nd tier affiliate contracts. This
+                                                means that you can give someone with a ClickBetter
+                                                account a percentage of your product affiliate sale if
+                                                they refer the affiliate that leads to that particular
+                                                sale.
+                                            </p>
+                                            <div class="py-3">
+                                                <div class="col-12 mb-3 align-items-center form-group">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <label class="mb-2">Enter Other Party Username</label>
+                                                        <div class="query-icon">
+                                                            <i class="bx bx-question-mark" data-bs-toggle="tooltip"
+                                                                data-bs-placement="bottom"
+                                                                title="Must be existing clickbetter user"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <input type="text" class="form-control w-100" value="John" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 my-4 align-items-center form-group">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <label class="mb-2">Enter Percentage Of Sale You Agree To
+                                                            Pay</label>
+                                                        <div class="query-icon">
+                                                            <i class="bx bx-question-mark" data-bs-toggle="tooltip"
+                                                                data-bs-placement="bottom"
+                                                                title="Your Partner will recive these details via email"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <input type="text" class="form-control w-100" value="10%" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mb-3 align-items-center form-group">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <label for="basic-url" class="form-label">Enter JV page URL
+                                                            where referrals will be
+                                                            redirected to signup</label>
+                                                        <div class="query-icon">
+                                                            <i class="bx bx-question-mark" data-bs-toggle="tooltip"
+                                                                data-bs-placement="bottom"
+                                                                title="Must be existing clickbetter user"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text" id="basic-addon3">https://</span>
+                                                        <input type="text" class="form-control" id="basic-url"
+                                                            aria-describedby="basic-addon3" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Close
+                                            </button>
+                                            <button type="button" class="btn btn-primary">
+                                                Create Affiliate Contract
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-light mx-2">
+                        Export Referrals
+                    </button>
+                </div>
 
-                    <!-- To hide the table add d-none class here -->
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table id="example"
-                                    class="table table-striped table-bordered table-responsive table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>Type</th>
-                                            <th>Order ID</th>
-                                            <th>Affiliate</th>
-                                            <th>Tracking ID (TID)</th>
-                                            <th>Vendor</th>
-                                            <th>Price (in $)</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Order Date & Time</th>
-                                            <th>Product Name</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title d-flex align-items-center justify-content-between">
+                                    <h5 class="mb-0 text-white">
+                                        Your Existing Second Tier Affiliate Contracts
+                                    </h5>
+                                    <div class="query-icon">
+                                        <i class="bx bx-question-mark" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" title="Must be existing clickbetter user"></i>
+                                    </div>
+                                </div>
+                                <hr />
+                                <p>No Affiliate Contracts Found!</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title d-flex align-items-center justify-content-between">
+                                    <h5 class="mb-0 text-white">
+                                        Your Existing JV Contracts
+                                    </h5>
+                                    <div class="query-icon">
+                                        <i class="bx bx-question-mark" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" title="Must be existing clickbetter user"></i>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="table-responsive">
+                                    <table id="example"
+                                        class="table table-striped table-bordered table-responsive table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Contract With User</th>
+                                                <th>Contract Created On</th>
+                                                <th>Sale Share %</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Lord Turban</td>
+                                                <td>Monday 02 March 2019 12:24 PM</td>
+                                                <td>2%</td>
+                                                <td>Terminated</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lord Turban</td>
+                                                <td>Monday 02 March 2019 12:24 PM</td>
+                                                <td>2%</td>
+                                                <td>Terminated</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lord Turban</td>
+                                                <td>Monday 02 March 2019 12:24 PM</td>
+                                                <td>2%</td>
+                                                <td>Terminated</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lord Turban</td>
+                                                <td>Monday 02 March 2019 12:24 PM</td>
+                                                <td>2%</td>
+                                                <td>Terminated</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title d-flex align-items-center justify-content-between">
+                                    <h5 class="mb-0 text-white">
+                                        Your Existing Second Tier Affiliate Contracts As A Broker
+                                    </h5>
+                                    <div class="query-icon">
+                                        <i class="bx bx-question-mark" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" title="Must be existing clickbetter user"></i>
+                                    </div>
+                                </div>
+                                <hr />
+                                <p>No Affiliate Contracts Found!</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title d-flex align-items-center justify-content-between">
+                                    <h5 class="mb-0 text-white">
+                                        Your Existing JV Contracts As A Partner
+                                    </h5>
+                                    <div class="query-icon">
+                                        <i class="bx bx-question-mark" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" title="Must be existing clickbetter user"></i>
+                                    </div>
+                                </div>
+                                <hr />
+                                <p>No Affiliate Contracts Found!</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
+
+
+
+
                 <!--End Row-->
             </div>
         </div>
-        <!--end page wrapper -->
-        <!--start overlay-->
-        <div class="overlay toggle-icon"></div>
-        <!--end overlay-->
-        <!--Start Back To Top Button-->
-        <a href="javaScript:;" class="back-to-top"><i class="bx bxs-up-arrow-alt"></i></a>
-        <!--End Back To Top Button-->
-        <footer class="bg-dark shadow-sm p-2 text-center fixed-bottom">
-            <p class="mb-0">Copyright © 2021. All right reserved.</p>
-        </footer>
+    </div>
+    <!--end page wrapper -->
+    <!--start overlay-->
+    <div class="overlay toggle-icon"></div>
+    <!--end overlay-->
+    <!--Start Back To Top Button-->
+    <a href="javaScript:;" class="back-to-top"><i class="bx bxs-up-arrow-alt"></i></a>
+    <!--End Back To Top Button-->
+    <footer class="page-footer">
+        <p class="mb-0">Copyright © 2021. All right reserved.</p>
+    </footer>
     </div>
     <!--end wrapper-->
 
@@ -713,16 +865,6 @@
     <script src="assets/plugins/apexcharts-bundle/js/apexcharts.min.js"></script>
     <script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
     <script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#example").DataTable();
-        });
-    </script>
-    <script>
-        $(function () {
-            $('[data-bs-toggle="tooltip"]').tooltip();
-        });
-    </script>
     <script>
         $(function () {
             $(".knob").knob();
